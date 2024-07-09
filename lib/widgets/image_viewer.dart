@@ -39,29 +39,29 @@ class _ImageViewerState extends State<ImageViewer> {
         switchOutCurve: Curves.easeInOut,
         child: widget.image == null
             ? DottedBorder(
-                color: Colors.indigo,
-                strokeWidth: 2,
+                color: Colors.grey,
+                strokeWidth: 1,
                 borderType: BorderType.RRect,
-                dashPattern: const [8, 4],
+                dashPattern: const [4, 4],
                 radius: const Radius.circular(12),
                 child: InkWell(
                   onTap: _selectImage,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(8),
                   child: Container(
                     constraints: const BoxConstraints(
                       maxWidth: 400,
                       maxHeight: 240,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.indigo.withOpacity(0.2),
+                      color: Colors.grey.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: const Center(
                       child: Text(
                         'Select Image',
                         style: TextStyle(
-                          color: Colors.indigo,
-                          fontSize: 28,
+                          color: Colors.black,
+                          fontSize: 20,
                           fontWeight: FontWeight.w500,
                         ),
                       ),

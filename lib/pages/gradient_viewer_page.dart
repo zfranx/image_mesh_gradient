@@ -115,14 +115,6 @@ class _GradientViewerPageState extends State<GradientViewerPage> {
           //     ),
           //   ),
           // ),
-          const SafeArea(
-            child: Align(
-              alignment: Alignment.topLeft,
-              child: BackButton(
-                color: Colors.black,
-              ),
-            ),
-          ),
         ],
       ),
       // body: Center(
